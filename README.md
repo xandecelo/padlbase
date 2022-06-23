@@ -10,8 +10,9 @@ Consists of an LTS linux image (Ubuntu 22.04) with:
 
 ```bash
 # Docker
-docker build . -t alefzero/padlbase
+docker build https://github.com/xandecelo/padlbase.git#main  -t alefzero/padlbase
 
 # Openshift CLI
-oc new-app https://github.com/xandecelo/padlbase.git--name=alefzero/padlbase
+oc new-app https://github.com/xandecelo/padlbase.git#main --name=alefzero/padlbase
 
+```
